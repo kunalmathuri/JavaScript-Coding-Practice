@@ -10,7 +10,7 @@
 // console.log(`No. of Words:${result.countWords}`);
 
 // Same code without use of inbuilt function
-//at i = o we are outside the loop — so at the start of the loop, inWord is definitely false, which makes !inWord true alongwiih input[i] !== " ". That’s exactly why the condition runs at the first non-space character of a word by satisfying both condition.
+
 function countCharsAndWords(input) {
   let start = 0;
   let end = input.length - 1;
@@ -30,6 +30,7 @@ function countCharsAndWords(input) {
   let inWord = false;
   for (i = start; i <= end; i++) {
     if (input[start] !== " " && !inWord) {
+      //at i = 0; we are outside the loop — so at the start of the loop, inWord is definitely false, which makes !inWord true alongwiih input[i] !== " ". That’s exactly why the condition runs at the first non-space character of a word by satisfying both condition.
       inWord = true;
       countWords++;
     } else if (input[i] === " ") {
