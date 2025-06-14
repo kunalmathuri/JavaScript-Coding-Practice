@@ -1,15 +1,15 @@
-// function countCharsAndWords(input) {
-//   const trimmedInput = input.trim();
-//   const countChars = trimmedInput.length; // it will count the char including char.
-//   const countWords = trimmedInput === "" ? 0 : trimmedInput.split(/\s+/).length; // Count words - (splitting by whitespace and filtering out empty strings)
-//   return { countChars, countWords };
-// }
-// let input1 = "hello world ! this is javaScript, enjoy!";
-// let result = countCharsAndWords(input1);
-// console.log(`No. of Characters:${result.countChars}`);
-// console.log(`No. of Words:${result.countWords}`);
+function countCharsAndWords(input) {
+  const trimmedInput = input.trim();
+  const countChars = trimmedInput.length; // it will count the char including char.
+  const countWords = trimmedInput === "" ? 0 : trimmedInput.split(/\s+/).length; // Count words - (splitting by whitespace and filtering out empty strings)
+  return { countChars, countWords };
+}
+let input01 = "hello world ! this is javaScript, enjoy!";
+let result01 = countCharsAndWords(input01);
+console.log(`No. of Characters:${result01.countChars}`);
+console.log(`No. of Words:${result01.countWords}`);
 
-// Same code without use of inbuilt function
+// Same code without use of inbuilt functions
 
 function countCharsAndWords(input) {
   let start = 0;
